@@ -1,70 +1,148 @@
-# Getting Started with Create React App
+# ByeWind Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, pixel-perfect React dashboard built with Material-UI and Framer Motion, featuring a comprehensive e-commerce analytics interface.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+### Layout & Design
+- **Three-column responsive layout** with collapsible sidebar
+- **Pixel-perfect design** matching the provided specifications
+- **Modern UI/UX** with clean typography and consistent spacing
+- **Cross-browser compatible** with smooth animations
 
-### `npm start`
+### Components
+- **Left Sidebar**: Navigation with collapsible sections, active states, and user profile
+- **Header Bar**: Search functionality, user avatars, and action buttons
+- **Main Content Area**: 
+  - Key metrics cards with trend indicators
+  - Interactive charts (Bar chart for projections vs actuals, Line chart for revenue)
+  - Revenue by location with animated world map
+  - Top selling products table
+  - Total sales donut chart
+- **Right Sidebar**: Notifications, activities, and contacts list
+- **Bottom Action Bar**: Quick access tools and edit functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Animations & Interactions
+- **Framer Motion** for smooth page transitions and micro-interactions
+- **Hover effects** on cards, buttons, and interactive elements
+- **Staggered animations** for list items and components
+- **Scale and lift effects** for enhanced user feedback
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Responsive Design
+- **Mobile-first approach** with breakpoint-based layouts
+- **Collapsible sidebar** for mobile devices
+- **Flexible grid system** that adapts to different screen sizes
+- **Touch-friendly** interface elements
 
-### `npm test`
+## 🛠️ Technology Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React 19.1.1** - Modern React with hooks
+- **Material-UI (MUI) 5** - Component library and theming
+- **Framer Motion** - Animation library
+- **Chart.js** - Data visualization
+- **React Chart.js 2** - React wrapper for Chart.js
+- **CSS3** - Custom styles and animations
 
-### `npm run build`
+## 📦 Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm run eject`
+## 🎨 Design System
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Color Palette
+- **Primary Purple**: #7C3AED
+- **Secondary Green**: #10B981
+- **Background**: #F8FAFC
+- **Text Primary**: #1F2937
+- **Text Secondary**: #6B7280
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Typography
+- **Font Family**: Inter (Google Fonts)
+- **Weights**: 300, 400, 500, 600, 700
+- **Responsive sizing** with consistent line heights
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Spacing & Layout
+- **8px grid system** for consistent spacing
+- **12px border radius** for cards and components
+- **Material Design** elevation and shadows
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📱 Responsive Breakpoints
 
-## Learn More
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎯 Key Features Implemented
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Data Visualization
+- **Bar Chart**: Projections vs Actuals with dual datasets
+- **Line Chart**: Revenue comparison with current vs previous week
+- **Donut Chart**: Total sales breakdown by channel
+- **Interactive tooltips** and legends
 
-### Code Splitting
+### User Experience
+- **Smooth transitions** between states
+- **Loading animations** for better perceived performance
+- **Accessible design** with proper focus states
+- **Keyboard navigation** support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Performance
+- **Optimized animations** with hardware acceleration
+- **Efficient re-renders** with React best practices
+- **Lazy loading** for better initial load times
 
-### Analyzing the Bundle Size
+## 🔧 Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The dashboard is built with a comprehensive theme system that allows easy customization:
 
-### Making a Progressive Web App
+- **Color scheme** can be modified in `App.js`
+- **Typography** settings in the MUI theme
+- **Component styles** can be overridden
+- **Animation timings** are configurable
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📄 File Structure
 
-### Advanced Configuration
+```
+src/
+├── components/
+│   ├── Dashboard.js          # Main dashboard layout
+│   ├── LeftSidebar.js        # Navigation sidebar
+│   ├── Header.js             # Top header bar
+│   ├── MainContent.js        # Main content area
+│   ├── MetricsCards.js       # Key metrics display
+│   ├── ChartsSection.js      # Chart components
+│   ├── RevenueByLocation.js  # Location revenue card
+│   ├── TopSellingProducts.js # Products table
+│   ├── TotalSalesChart.js    # Donut chart
+│   ├── RightSidebar.js       # Notifications & contacts
+│   └── BottomActionBar.js    # Bottom action bar
+├── App.js                    # Main app component with theme
+├── App.css                   # Global styles
+├── index.js                  # App entry point
+└── index.css                 # Base styles
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🚀 Deployment
 
-### Deployment
+The app is ready for deployment to any static hosting service:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npm run build
+```
 
-### `npm run build` fails to minify
+This creates an optimized production build in the `build` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 License
+
+This project is created for demonstration purposes.
